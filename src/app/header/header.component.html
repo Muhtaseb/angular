@@ -1,0 +1,39 @@
+<header class="navbar navbar-expand-md navbar-dark fixed-top nga-navbar">
+    <nav class="container" aria-label="Main navigation">
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div>
+      <a routerLink="/" class="navbar-brand" alt="Accueil" aria-label="Ganatan">
+        <img src="./assets/img/aramex-logo.png" srcset="./assets/img/aramex-logo.png,
+        ./assets/img/aramex-logo.png 2x" width="me-auto" height="me-auto" alt="Logo Ganatan">
+        <span class="nga-logo mx-1"></span>
+      </a>
+    </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/">
+              <i class="fas fa-home me-1"></i>Home</a>
+          </li>
+ 
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/about">
+              <i class="far fa-question-circle me-1"></i>My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/contact">
+              <i class="fas fa-envelope me-1"></i>My Addresses</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button type="button" class="btn btn-sm btn-outline-light me-2" routerLink="/login"><i
+              class="fas fa-sign-in-alt me-2"></i>Login</button>
+        </form>
+      </div>
+      <a class="nga-btn-navbar" aria-current="page" routerLink="/contact">
+        <i class="fas me-1"></i>العربية</a>
+    </nav>
+  </header>
