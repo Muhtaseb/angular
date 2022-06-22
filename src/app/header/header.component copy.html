@@ -1,0 +1,69 @@
+<header class="navbar navbar-expand-md navbar-dark fixed-top nga-navbar">
+  <nav class="container" aria-label="Main navigation">
+  
+    <button class="navbar-toggler btn-navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      
+    </button> 
+    
+    <div>
+    <a routerLink="/" class="navbar-brand" alt="Accueil" aria-label="Aramex">
+      <img src="./assets/img/aramex logo.svg" srcset="./assets/img/aramex logo.svg,
+      ./assets/img/aramex logo.svg 2x" width="me-auto" height="me-auto" alt="Logo Aramex">
+      <span class="nga-logo mx-1"></span>
+    </a>
+  </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/">
+            <i class="fas fa-home me-1"></i>Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/MyProfile">
+            <i class="far fa-question-circle me-1"></i>My Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-1" aria-current="page" routerLink="/MyAddresses">
+            <i class="fas fa-envelope me-2"></i>My Addresses</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button type="button" class="btn btn-sm btn-outline-light me-2" routerLink="/login"><i
+            class="fas fa-sign-in-alt me-2"></i>Login</button>
+      </form>
+    </div>
+    <a class="nga-btn-navbar nav-link" aria-current="page" routerLink="/contact">
+      <i class="fas me-1"></i>العربية</a>
+  </nav>
+</header>
+
+
+<div class="container py-2">
+  <div class="row">
+      <div class="col">
+          <div  style="background-color: #DC291E; width: 75%;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" data-bs-keyboard="false" data-bs-backdrop="false" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                  <img class="offcanvas-title" src="./assets/img/aramex logo.svg"/>
+                  <button type="button" class="btn-close text-reset close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <hr style="width:75%;color:#ffff; padding-left: 45px;
+              margin-left: 12.5%;">  
+
+              <div class="offcanvas-body">
+                  <div id="sidebar" class="">
+                      <div class="nav flex-column py-3">
+                          <a href="/" class="nav-link">Home</a>
+                          <a  href="/MyProfile"   class="nav-link">My Profile</a>
+                          <a  href="/MyAddresses" class="nav-link">My Addresses</a>
+                          <a href="#" class="nav-link" style="margin-top:10%;">Logout</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

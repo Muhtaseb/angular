@@ -23,9 +23,11 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [ "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
           },
           "configurations": {
             "production": {
@@ -61,6 +63,9 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "port": 4201
+        },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
@@ -99,6 +104,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "26cb3a0e-499d-417c-a4c2-b080f1191410"
+=======
+    "analytics": "0576ab2f-48ac-43a5-8876-b85c5cfdcb55"
+>>>>>>> 2837ba5ab833be32eedb911f0c1233fa64149b69
   }
 }
